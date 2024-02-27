@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap'); 
+
+
+body {
+  font-family: 'Arial', sans-serif; 
+  margin: 0;
+  background-color: #f8f9fa; 
+  color: #333; 
+  font-family: 'Poppins', sans-serif;
+}
+
+.contain-all {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  max-width: 900px;
+  margin: 30px auto;
+}
+
+/* Component Pieces */
+.income, .expense {
+  flex: 1 1 40%; 
+  background-color: #fff;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 8px; 
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.running-tally, .income-container {
+  flex: 1 1 40%;
+  background-color: #fff;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 8px; 
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  color: #00bcd4;
+  margin-bottom: 15px;
+  font-family: 'Roboto', sans-serif; 
+  text-transform: capitalize;
+  text-align: center;
+}
+
+input[type="text"], input[type='number'] {
+  border: 1px solid #ddd;
+  padding: 10px;
+  width: 80%;
+  margin-bottom: 10px;
+  border-radius: 5px; 
+}
+
+.form-container, .ex-form {
+  display: flex;
+  flex-direction: column;
+}
+
+ul {
+  list-style-type: none; 
+  padding: 0;
+}
+
+li {
+  margin-bottom: 8px;
+}
+
+.budget-button {
+  text-align: center;
+  margin: 30px;
+}
+
+.sub-button {
+  background-color: #00bcd4; 
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  border-radius: 5px; 
+  cursor: pointer;
+}
+
+.sub-button:hover {
+  background-color: #0097a7; 
+}
+
+.budget-results {
+  margin-top: 20px;
+  font-size: 18px; 
+  font-weight: bold;
+  padding: 25px;
+  border-radius: 8px;
+  background-color: #e8f5e9; 
+}
+
+/* Typography */
+.income-title h2, .income-tally h2, .expense-tally h2, .ex-text {
+  color: #00bcd4; 
+}
+
+.input-value, .amount, .desc {
+  border: 1px solid #e2e2e2;
+  margin-bottom: 1em;
+  padding: 10px;
+  border-radius: 5px;
+} 
+.budget-button button:last-child { 
+  margin-left: 10px;
+}
